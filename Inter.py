@@ -2,6 +2,7 @@
 Text_string = 0
 import os
 from tkinter import *
+import sys
 
 
 def main():
@@ -30,6 +31,8 @@ def main():
         if text == 'var: nw v;':
             var_nw = input('                         name>')
             var_txt = input('                          var>')
+        if text == 'Qall':
+            sys.exit()
         
 
 if __name__ == '__main__':
