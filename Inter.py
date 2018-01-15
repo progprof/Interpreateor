@@ -1,7 +1,9 @@
+#!/usr/bin/python
+
 #Mini Interpreiaitor
 Text_string = 0
 import os
-from tkinter import *
+#from tkinter import *
 import sys
 
 
@@ -10,6 +12,7 @@ def main():
         try:
             text = raw = input('Interpretaitor> ')
         except EOFError:
+	    print "Going out on KEYBOARD interrupt"
             break
         if not text:
             continue
@@ -33,6 +36,8 @@ def main():
             var_txt = input('                          var>')
         if text == 'Qall':
             sys.exit()
+	    print "Leaving on <Qall> command"
+
         
 
 if __name__ == '__main__':
